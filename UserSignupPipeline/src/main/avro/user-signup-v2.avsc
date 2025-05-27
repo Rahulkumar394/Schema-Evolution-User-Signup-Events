@@ -1,0 +1,14 @@
+{
+  "namespace": "com.example.avro",
+  "type": "record",
+  "name": "UserSignupEvent",
+  "fields": [
+    { "name": "name", "type": "string" },
+    { "name": "email", "type": "string" },
+    {
+      "name": "phoneNumber",
+      "type": ["null", "string"],
+      "default": null
+    }
+  ]
+}
